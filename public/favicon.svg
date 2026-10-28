@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="maroonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a1027" />
+      <stop offset="100%" stop-color="#4a0815" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6e082" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#aa8214" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#maroonGrad)" stroke="url(#goldGrad)" stroke-width="2.5" />
+  <circle cx="50" cy="50" r="43" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+  <!-- Needle & Thread Motif -->
+  <path d="M28 68 Q50 30 72 26" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+  <!-- Letters R and B combined in elegant monogram -->
+  <text x="50" y="60" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="700" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="1">RB</text>
+  <circle cx="50" cy="74" r="2" fill="url(#goldGrad)" />
+</svg>

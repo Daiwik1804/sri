@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --color-maroon-950: #2c040b;
+  --color-maroon-900: #4a0815;
+  --color-maroon-800: #6b1126;
+  --color-maroon-700: #851833;
+  --color-maroon-600: #a12342;
+  --color-maroon-100: #f6d8df;
+  --color-maroon-50: #fcf2f4;
+
+  --color-gold-300: #f6e082;
+  --color-gold-400: #e5c058;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #b8911c;
+  --color-gold-700: #8c6e12;
+  --color-gold-50: #fdfaf0;
+
+  --color-blush-50: #fdf4f7;
+  --color-blush-100: #fce7f0;
+  --color-blush-200: #fad0e1;
+  --color-blush-300: #f6a9c6;
+  --color-blush-500: #e45b8e;
+
+  --color-ivory-50: #fefcf9;
+  --color-ivory-100: #fbf8f0;
+  --color-ivory-200: #f5f0e3;
+  --color-ivory-300: #ede4d1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fefcf9;
+  color: #2b1810;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fdfaf5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8911c;
+}
+
+/* Subtle Indian floral and gold shimmer accents */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #f6e082 0%, #d4af37 50%, #aa8214 100%);
+}
+
+.bg-maroon-gradient {
+  background: linear-gradient(135deg, #7a1027 0%, #54091a 60%, #34040e 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #e5c058 0%, #d4af37 60%, #996515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-ivory-pattern {
+  background-color: #fefcf9;
+  background-image: radial-gradient(#d4af37 0.5px, transparent 0.5px), radial-gradient(#d4af37 0.5px, #fefcf9 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  background-opacity: 0.05;
+}
